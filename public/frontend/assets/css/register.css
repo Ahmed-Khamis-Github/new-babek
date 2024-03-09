@@ -1,0 +1,130 @@
+.step-wrapper {
+    padding: 20px 0;
+    display: none;
+  }
+  .step-wrapper.active {
+    display: block;
+  }
+  
+  .step-indicator {
+    border-collapse: separate;
+    display: table;
+    margin-left: 0px;
+    position: relative;
+    table-layout: fixed;
+    text-align: center;
+    vertical-align: middle;
+    padding-left: 0;
+    padding-top: 20px;
+  }
+  .step-indicator li {
+    display: table-cell;
+    position: relative;
+    float: none;
+    padding: 0;
+    width: 1%;
+  }
+  .step-indicator li:after {
+    content: "";
+    display: block;
+    height: 1px;
+    position: absolute;
+    width: 100%;
+    top: 32px;
+  }
+  .step-indicator li:after {
+    left: 50%;
+  }
+  .step-indicator li:last-child:after {
+    display: none;
+  }
+  .step-indicator li.active .step {
+    border-color: #4183D7;
+    color: #4183D7;
+  }
+  .step-indicator li.active .caption {
+    color: #4183D7;
+  }
+  .step-indicator li.complete:after {
+  }
+  .step-indicator li.complete .step {
+    border-color: #87D37C;
+    color: #87D37C;
+  }
+  .step-indicator li.complete .caption {
+    color: #87D37C;
+  }
+  .step-indicator .step {
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    color: #ccc;
+    font-size: 24px;
+    height: 64px;
+    line-height: 64px;
+    margin: 0 auto;
+    position: relative;
+    width: 64px;
+    z-index: 1;
+  }
+  .step-indicator .step:hover {
+    cursor: pointer;
+  }
+  .step-indicator .caption {
+    color: #ccc;
+    padding: 11px 16px;
+  }
+  .video-bg {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .video-bg video {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+.content {
+  background-color: transparent;
+  color: #fff;
+  box-shadow: -3px -3px 9px #aaa9a9a2,
+  3px 3px 7px rgba(147, 149, 151, 0.671);
+
+}
+.content input {
+  font-size: 18px;
+  outline: none;
+  border: none;
+  color: #e0d2d2;
+  border: 1px solid rgba(255, 255, 255, 0.438);
+  border-radius: 8px;
+  background: rgba(105, 105, 105, 0);
+}
+.content input:focus{
+  background-color: #ebe1e1bf;
+  color: #262424;
+}
+.content input:active{
+  background-color: #ebe1e1bf;
+  color: #262424;
+}
+.content textarea{
+  font-size: 18px;
+  outline: none;
+  border: none;
+  color: #e0d2d2;
+  border: 1px solid rgba(255, 255, 255, 0.438);
+  border-radius: 8px;
+  background: rgba(105, 105, 105, 0);
+}
+.content textarea:focus{
+  background-color: #ebe1e1bf;
+  color: #262424;
+}
+.content-header{
+  background-color: #ebe1e1bf;
+  color: #262424;
+}

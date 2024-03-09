@@ -1,0 +1,73 @@
+{
+  "menu": [
+    {
+      "url": "/",
+      "name": "Home",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "slug": "pages-home"
+    },
+    {
+      "icon": "menu-icon tf-icons ti ti-users",
+      "name": "users",
+      "slug": "users",
+      "submenu": [
+        {
+          "url": "users",
+          "name": "list",
+          "slug": "users.index"
+        },
+        {
+          "url": "users/create",
+          "name": "create",
+          "slug": "users.create"
+        }
+      ]
+    },
+    {
+      "icon": "menu-icon tf-icons ti ti-building",
+      "name": "companies",
+      "slug": "companies",
+      "submenu": [
+        {
+          "url": "companies",
+          "name": "list",
+          "slug": "companies.index"
+        },
+        {
+          "url": "companies/create",
+          "name": "create",
+          "slug": "companies.create"
+        }
+      ]
+    },
+    {
+      "icon": "menu-icon tf-icons ti ti-shopping-cart",
+      "name": "orders",
+      "slug": "orders",
+      "submenu": [
+        {
+          "url": "orders",
+          "name": "list",
+          "slug": "orders.index"
+        },
+        {
+          "url": "orders/create",
+          "name": "create",
+          "slug": "orders.create"
+        }
+      ]
+    },
+    {
+      "icon": "menu-icon tf-icons ti ti-gift",
+      "name": "offers",
+      "slug": "offers",
+      "submenu": [
+        {
+          "url": "orders/with-offers",
+          "name": "list",
+          "slug": "offers.show_orders_with_offers"
+        }
+      ]
+    }
+  ]
+}
